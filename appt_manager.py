@@ -11,14 +11,14 @@ def main():
     print("=" * 31)
     print('Hair Salon Appointment Manager!')
     print("=" * 31)
-    print(' 1) Schedule appoint.')
-    print(' 2) Find appoint. by name')
-    print(' 3) Print calender for specific day')
-    print(' 4) Cancel appoint.')
-    print(' 5) Change appoint.')
-    print(' 6) Calculate total fees for a day')
-    print(' 7) Calculate total weekly fees')
-    print(' 9) Exit')
+    print(' 1 Schedule appoint.')
+    print(' 2 Find appoint. by name')
+    print(' 3 Print calender for specific day')
+    print(' 4 Cancel appoint.')
+    print(' 5 Change appoint.')
+    print(' 6 Calculate total fees for a day')
+    print(' 7 Calculate total weekly fees')
+    print(' 9 Exit')
     print("=" * 31)
 
 
@@ -53,21 +53,15 @@ def find_appoint_by_name(name):
 
 
 
-def cancel_appoint(time):
-
-    if time in addedTime and day in addedDay:
-        index = addedName.index(addedTime)
-        addedDay.remove(addedDay)
-        addedPhone.pop(index)
-        addedType.pop(index)
-        addedTime.pop(index)
-        addedName.pop(index)
-
-        print(f'{addedDay} {addedTime} for {addedName.index(index)} has been removed!')
-
-    else:
-
-        print(f'Time slot is not appointed!')
+def cancel_appoint(day, time):
+        
+    index = addedTime.index(time)
+    print(f'Schedule for {day} at {time} has been removed!')
+    addedDay.pop(index)
+    addedPhone.pop(index)
+    addedType.pop(index)
+    addedTime.pop(index)
+    addedName.pop(index)
 
 
 
@@ -119,6 +113,7 @@ def save_daily_charges_to_file():
 while True:
     input("Please press enter to continue....")
     main()
+
     userinput = int(input('>>> '))
  
     if userinput == 1:
@@ -139,7 +134,7 @@ while True:
             print('1: Mens haircut 2: Ladies haircut 3: Mens Coloring 4: Ladies Coloring')
             type = int(input('>>> '))
             schedule_appoint(day, time, name, phone, type)
-            print(addedName)
+            print(addedName, addedDay, addedTime)
  
     elif userinput == 2:
 
@@ -151,7 +146,14 @@ while True:
         []
  
     elif userinput == 4:
-        cancel_appoint()
+
+        day = input('What day: ')
+        time = int(input('Start hour: '))
+
+        if day in addedDay and time in addedTime:
+            cancel_appoint(day, time)
+        else:
+            print(f'Time slot is not appointed!')
  
     elif userinput == 5: 
         #CHANGE APPOINT
