@@ -151,7 +151,28 @@ while True:
             print(f'Time slot is not appointed!')
  
     elif userinput == 5: 
-        # Placeholder for change appointment
+        # Change appointment
+        old_day = input("Enter the current appointment day: ")
+        old_time = int(input("Enter the current appointment start hour: "))
+        if old_day in addedDay and old_time in addedTime:
+            index = addedDay.index(old_day)
+            if addedTime[index] == old_time:
+                new_day = input(("Enter the new appointment: "))
+                new_time = int(input("Enter the new appointment start hour (Between 9AM or 16PM)"))
+                while new_time > 16 or new_time < 9:
+                    new_time = int(input("Invalid, not in the time slot! Try again: "))
+                    if new_day in addedDay and new_time in addedTime:
+                        print("Sorry, the new time slot is already taken!")
+                    else:
+                        addedDay[index] = new_day
+                        addedTime[index] = new_time
+                        print(f"Appointment successfully moved to {new_day} at {new_time}:00.")
+
+                    
+            else:
+                print("Appointment not found for the specific time.")
+        else:
+            print("No appointment found to change.")
         pass
  
     elif userinput == 6:  
