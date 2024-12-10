@@ -1,6 +1,7 @@
+# Initialize lists
 addedName = []
 addedDay = []
-addedTime = []  
+addedTime = []
 addedCost = []
 addedPhone = []
 addedType = []
@@ -8,6 +9,7 @@ addedType = []
 
 
 
+# Display startup interface at the start and when option is fulfilled
 def main():
     print("=" * 31)
     print('Hair Salon Appointment Manager!')
@@ -90,21 +92,24 @@ def save_daily_charges_to_file():
 
 
 
+# Initiate loop until option 9 is chosen.
 while True:
     input("Please press enter to continue....")
+    #startup interface
     main()
 
     userinput = int(input('>>> '))
  
+ #option 1 registers customer booking.
     if userinput == 1:
-        day = input('What day: ')
+        day = input('What day: ').capitalize()
         time = int(input('Enter start hour (Between 9AM and 16PM): '))
         while time > 16 or time < 9:
             time = int(input('Invalid, not in time slot! Try again: '))
         if day in addedDay and time in addedTime:
             print(f'Sorry, time slot has been taken!')
         else:
-            name = input('Name: ')
+            name = input('Name: ').capitalize()
             phone = (input('Phone number: '))
             print('Appoint. types:')
             print('1: Mens haircut 2: Ladies haircut 3: Mens Coloring 4: Ladies Coloring')
@@ -114,13 +119,14 @@ while True:
  
 
 
+# Verify appointment.
     elif userinput == 2:
-        name = input('Enter Name: ')
+        name = input('Enter Name: ').capitalize()
         find_appoint_by_name(name)
  
     elif userinput == 3:  
         # Print calendar for specific day
-        day = input('Enter the day for which you want to see the schedule: ')
+        day = input('Enter the day for which you want to see the schedule: ').capitalize()
         if day not in addedDay:
             print(f'No appointments scheduled for {day}.')
         else:
@@ -135,9 +141,9 @@ while True:
                     print(f"{start_time:<10}{addedName[i]:<15}{addedPhone[i]:<15}{appt_type[addedType[i]]:<15}")
 
 
-
+# Remove appointment.
     elif userinput == 4:
-        day = input('What day: ')
+        day = input('What day: ').capitalize()
         time = int(input('Start hour: '))
         if day in addedDay and time in addedTime:
             cancel_appoint(day, time)
@@ -154,12 +160,14 @@ while True:
     elif userinput == 7:
         # Placeholder for weekly charges
         pass
-    
+
+#Shut down system when called
     elif userinput == 9:  
         print('System Shutting down . . .')
         print('Thank you and goodbye! : )')
         break
  
+#While the loop goes on, error message pops up when invalid option is inputted.
     else:
         print('')
         print('Invalid option, please try again.')
