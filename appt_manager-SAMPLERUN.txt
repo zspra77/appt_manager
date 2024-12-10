@@ -1,0 +1,406 @@
+#SAMPLE RUN 1
+Please press enter to continue....
+===============================
+Hair Salon Appointment Manager!
+===============================
+ 1 Schedule appoint.
+ 2 Find appoint. by name
+ 3 Print calendar for specific day
+ 4 Cancel appoint.
+ 5 Change appoint.
+ 6 Calculate total fees for a day
+ 7 Calculate total weekly fees
+ 9 Exit
+===============================
+>>> 8
+
+Invalid option, please try again.
+
+Please press enter to continue....
+
+
+
+#SAMPLE RUN 2
+===============================
+Hair Salon Appointment Manager!
+===============================
+ 1 Schedule appoint.
+ 2 Find appoint. by name
+ 3 Print calendar for specific day
+ 4 Cancel appoint.
+ 5 Change appoint.
+ 6 Calculate total fees for a day
+ 7 Calculate total weekly fees
+ 9 Exit
+===============================
+>>> 3
+Enter the day for which you want to see the schedule: toosday
+No appointments scheduled for Toosday.
+Please press enter to continue....
+
+
+
+#SAMPLE RUN 3
+===============================
+Hair Salon Appointment Manager!
+===============================
+ 1 Schedule appoint.
+ 2 Find appoint. by name
+ 3 Print calendar for specific day
+ 4 Cancel appoint.
+ 5 Change appoint.
+ 6 Calculate total fees for a day
+ 7 Calculate total weekly fees
+ 9 Exit
+===============================
+>>> 3
+Enter the day for which you want to see the schedule: Saturday
+Schedule for Saturday:
+Time      Client Name    Phone          Type
+--------------------------------------------------
+9:00      Tyler          587-123-4567   Mens Cut
+10:00     Stephanie      368-999-1111   Ladies Cut
+
+
+
+#SAMPLE RUN 4
+Please press enter to continue....
+===============================
+Hair Salon Appointment Manager!
+===============================
+ 1 Schedule appoint.
+ 2 Find appoint. by name
+ 3 Print calendar for specific day
+ 4 Cancel appoint.
+ 5 Change appoint.
+ 6 Calculate total fees for a day
+ 7 Calculate total weekly fees
+ 9 Exit
+===============================
+>>> 1
+What day: Thursday
+Enter start hour (Between 9AM and 16PM): 11
+Name: Steven
+Phone number: 403-600-6000
+Appoint. types:
+1: Mens haircut 2: Ladies haircut 3: Mens Coloring 4: Ladies Coloring
+>>> 1
+OK, Steven's appointment is booked!
+Please press enter to continue....
+
+
+
+
+#SAMPLE RUN 5
+===============================
+Hair Salon Appointment Manager!
+===============================
+ 1 Schedule appoint.
+ 2 Find appoint. by name
+ 3 Print calendar for specific day
+ 4 Cancel appoint.
+ 5 Change appoint.
+ 6 Calculate total fees for a day
+ 7 Calculate total weekly fees
+ 9 Exit
+===============================
+>>> 1
+What day: Thursday
+Enter start hour (Between 9AM and 16PM): 11
+Sorry, time slot has been taken!
+Please press enter to continue....
+
+
+
+#SAMPLE RUN 6
+===============================
+Hair Salon Appointment Manager!
+===============================
+ 1 Schedule appoint.
+ 2 Find appoint. by name
+ 3 Print calendar for specific day
+ 4 Cancel appoint.
+ 5 Change appoint.
+ 6 Calculate total fees for a day
+ 7 Calculate total weekly fees
+ 9 Exit
+===============================
+>>> 1
+What day: Monday
+Enter start hour (Between 9AM and 16PM): 8
+Invalid, not in time slot! Try again:
+
+
+
+
+#SAMPLE RUN 8
+===============================
+Hair Salon Appointment Manager!
+===============================
+ 1 Schedule appoint.
+ 2 Find appoint. by name
+ 3 Print calendar for specific day
+ 4 Cancel appoint.
+ 5 Change appoint.
+ 6 Calculate total fees for a day
+ 7 Calculate total weekly fees
+ 9 Exit
+===============================
+>>> 2
+Enter Name: hamdy
+Appointments for Hamdy . . .
+Client Name      Phone        Day           Start             End       Type
+____________________________________________________________________________
+No appointments found . . .
+Please press enter to continue....
+
+
+
+#SAMPLE RUN 9
+===============================
+Hair Salon Appointment Manager!
+===============================
+ 1 Schedule appoint.
+ 2 Find appoint. by name
+ 3 Print calendar for specific day
+ 4 Cancel appoint.
+ 5 Change appoint.
+ 6 Calculate total fees for a day
+ 7 Calculate total weekly fees
+ 9 Exit
+===============================
+>>> 3
+Enter the day for which you want to see the schedule: Thursday
+Schedule for Thursday:
+Time      Client Name    Phone          Type
+--------------------------------------------------
+11:00     Steven         403-600-6000   Mens Cut
+13:00     Gabriela       368-111-9999   Ladies Cut
+Please press enter to continue....
+
+===============================
+Hair Salon Appointment Manager!
+===============================
+ 1 Schedule appoint.
+ 2 Find appoint. by name
+ 3 Print calendar for specific day
+ 4 Cancel appoint.
+ 5 Change appoint.
+ 6 Calculate total fees for a day
+ 7 Calculate total weekly fees
+ 9 Exit
+
+
+
+#SAMPLE RUN 10
+===============================
+Hair Salon Appointment Manager!
+===============================
+ 1 Schedule appoint.
+ 2 Find appoint. by name
+ 3 Print calendar for specific day
+ 4 Cancel appoint.
+ 5 Change appoint.
+ 6 Calculate total fees for a day
+ 7 Calculate total weekly fees
+ 9 Exit
+===============================
+>>> 5
+Enter the current appointment day: Thursday
+Enter the current appointment start hour: 11
+Enter the new appointment: Saturday
+Enter the new appointment start hour (Between 9AM or 16PM): 12
+Appointment successfully moved to Saturday at 12:00.
+Please press enter to continue....
+
+
+
+#SAMPLE RUN 11
+===============================
+Hair Salon Appointment Manager!
+===============================
+ 1 Schedule appoint.
+ 2 Find appoint. by name
+ 3 Print calendar for specific day
+ 4 Cancel appoint.
+ 5 Change appoint.
+ 6 Calculate total fees for a day
+ 7 Calculate total weekly fees
+ 9 Exit
+===============================
+>>> 3
+Enter the day for which you want to see the schedule: Thursday
+Schedule for Thursday:
+Time      Client Name    Phone          Type
+--------------------------------------------------
+13:00     Gabriela       368-111-9999   Ladies Cut
+Please press enter to continue....
+
+Hair Salon Appointment Manager!
+===============================
+ 1 Schedule appoint.
+ 2 Find appoint. by name
+ 3 Print calendar for specific day
+ 4 Cancel appoint.
+ 5 Change appoint.
+ 6 Calculate total fees for a day
+ 7 Calculate total weekly fees
+ 9 Exit
+===============================
+>>> 3
+Enter the day for which you want to see the schedule: Saturday
+Schedule for Saturday:
+Time      Client Name    Phone          Type
+--------------------------------------------------
+9:00      Tyler       	 587-123-4567   Mens Cut
+10:00	  Stephanie      368-999-1111   Ladies Cut
+12:00	  Steven       	 403-600-6000   Mens Cut
+Please press enter to continue....
+
+
+
+#SAMPLE RUN 12
+===============================
+Hair Salon Appointment Manager!
+===============================
+ 1 Schedule appoint.
+ 2 Find appoint. by name
+ 3 Print calendar for specific day
+ 4 Cancel appoint.
+ 5 Change appoint.
+ 6 Calculate total fees for a day
+ 7 Calculate total weekly fees
+ 9 Exit
+===============================
+>>> 5
+Enter the current appointment day: Saturday
+Enter the current appointment start hour: 11
+No appointment found to change.
+Please press enter to continue....
+===============================
+Hair Salon Appointment Manager!
+===============================
+ 1 Schedule appoint.
+ 2 Find appoint. by name
+ 3 Print calendar for specific day
+ 4 Cancel appoint.
+ 5 Change appoint.
+ 6 Calculate total fees for a day
+ 7 Calculate total weekly fees
+ 9 Exit
+===============================
+>>> 5
+Enter the current appointment day: Saturday 
+Enter the current appointment start hour: 12
+Enter the new appointment: Saturday
+Enter the new appointment start hour (Between 9AM or 16PM): 9
+Sorry, the new time slot is already taken!
+Please press enter to continue....
+
+
+
+#SAMPLE RUN 13
+===============================
+Hair Salon Appointment Manager!
+===============================
+ 1 Schedule appoint.
+ 2 Find appoint. by name
+ 3 Print calendar for specific day
+ 4 Cancel appoint.
+ 5 Change appoint.
+ 6 Calculate total fees for a day
+ 7 Calculate total weekly fees
+ 9 Exit
+===============================
+>>> 5
+Enter the current appointment day: Saturday
+Enter the current appointment start hour: 11
+No appointment found to change.
+Please press enter to continue....
+
+
+
+#SAMPLE RUN 17
+===============================
+Hair Salon Appointment Manager!
+===============================
+ 1 Schedule appoint.
+ 2 Find appoint. by name
+ 3 Print calendar for specific day
+ 4 Cancel appoint.
+ 5 Change appoint.
+ 6 Calculate total fees for a day
+ 7 Calculate total weekly fees
+ 9 Exit
+===============================
+>>> 4
+What day: Saturday
+Start hour: 12
+Schedule for Saturday at 12 has been removed!
+Please press enter to continue....
+
+
+
+#SAMPLE RUN 18
+===============================
+Hair Salon Appointment Manager!
+===============================
+ 1 Schedule appoint.
+ 2 Find appoint. by name
+ 3 Print calendar for specific day
+ 4 Cancel appoint.
+ 5 Change appoint.
+ 6 Calculate total fees for a day
+ 7 Calculate total weekly fees
+ 9 Exit
+===============================
+>>> 2
+Enter Name: Steven
+Appointments for Steven . . .
+Client Name      Phone        Day           Start             End       Type
+____________________________________________________________________________
+No appointments found . . .
+Please press enter to continue....
+
+
+
+#SAMPLE RUN 19
+===============================
+Hair Salon Appointment Manager!
+===============================
+ 1 Schedule appoint.
+ 2 Find appoint. by name
+ 3 Print calendar for specific day
+ 4 Cancel appoint.
+ 5 Change appoint.
+ 6 Calculate total fees for a day
+ 7 Calculate total weekly fees
+ 9 Exit
+===============================
+>>> 4
+What day: Saturday
+Start hour: 11
+Time slot is not appointed!
+Please press enter to continue....
+
+
+
+#SAMPLE RUN 21
+===============================
+Hair Salon Appointment Manager!
+===============================
+ 1 Schedule appoint.
+ 2 Find appoint. by name
+ 3 Print calendar for specific day
+ 4 Cancel appoint.
+ 5 Change appoint.
+ 6 Calculate total fees for a day
+ 7 Calculate total weekly fees
+ 9 Exit
+===============================
+>>> 9
+* * Exit System * *
+Would you like to save all appointments to a file (Y/N): n
+System Shutting down . . .
+Thank you and goodbye! : )
+PS C:\Users\zedri>
