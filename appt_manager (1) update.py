@@ -184,13 +184,19 @@ while True:
 
 #Shut down system when called
     elif userinput == 9:  
-        print('System Shutting down . . .')
-        print('Thank you and goodbye! : )')
-        break
+        print('* * Exit System * *')
+        save_file = input('Would you like to save all appointments to a file (Y/N): ').capitalize()
+        while save_file not in ['Y', 'N']:
+            save_file = input('Would you like to save all appointments to a file (Y/N): ').capitalize()
+            if save_file == 'Y':
+                save_daily_charges_to_file()
+            elif save_file == 'N':
+                print('System Shutting down . . .')
+                print('Thank you and goodbye! : )')
+                break
  
 #While the loop goes on, error message pops up when invalid option is inputted.
     else:
         print('')
         print('Invalid option, please try again.')
         print('')
-
