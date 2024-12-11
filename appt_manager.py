@@ -250,12 +250,12 @@ while True:
         save_file = input('Would you like to save all appointments to a file (Y/N): ').capitalize()
         while save_file not in ['Y', 'N']:
             save_file = input('Would you like to save all appointments to a file (Y/N): ').capitalize()
-            if save_file == 'Y':
-                save_daily_charges_to_file()
-            elif save_file == 'N':
-                print('System Shutting down . . .')
-                print('Thank you and goodbye! : )')
-                break
+        if save_file == 'Y':
+            save_daily_charges_to_file()
+        elif save_file == 'N':
+            print('System Shutting down . . .')
+            print('Thank you and goodbye! : )')
+            break
                 
     # If user choice is not 1, 2, 3, 4, 5, 6, 7 or 9, print error message.
     else:
