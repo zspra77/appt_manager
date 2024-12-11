@@ -92,6 +92,28 @@ def save_daily_charges_to_file():
 
 
 
+def weekly_charges()
+    if not addedCost:
+        print("No appointments scheduled for the week.")
+    else:
+        print("\nWeekly Charges Summary")
+        print(f"{'Day':<10}{'Appointments':<15}{'Total Charges':<15}")
+        print("-" * 40)
+        week_days = set(addedDay)
+        total_weekly_charges = 0
+        for day in sorted(week_days):
+            day_total = 0
+            for i in range(len(addedDay)):
+                if addedDay[i] == day:
+                    day_total += addedCost[i]
+            total_weekly_charges += day_total
+            print(f"{day:<10}{addedDay.count(day):<15}${day_total:<15.2f}")
+        print("-" * 40)
+        print(f"Total Weekly Charges: ${total_weekly_charges:.2f}")
+        print("-" * 40)
+
+
+
 # Initiate loop until option 9 is chosen.
 while True:
     input("Please press enter to continue....")
@@ -179,7 +201,7 @@ while True:
         day_charges()
  
     elif userinput == 7:
-        # Placeholder for weekly charges
+        weekly_charges()
         pass
 
 #Shut down system when called
