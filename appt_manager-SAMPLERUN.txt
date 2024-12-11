@@ -130,7 +130,26 @@ What day: Monday
 Enter start hour (Between 9AM and 16PM): 8
 Invalid, not in time slot! Try again:
 
-
+#SAMPLE RUN 7
+===============================
+Hair Salon Appointment Manager!
+===============================
+ 1 Schedule appoint.
+ 2 Find appoint. by name
+ 3 Print calendar for specific day
+ 4 Cancel appoint.
+ 5 Change appoint.
+ 6 Calculate total fees for a day
+ 7 Calculate total weekly fees
+ 9 Exit
+===============================
+>>> 2
+Enter Name: Steven
+Appointments for Steven . . .
+Client Name     Phone           Day        Start      End        Type
+--------------------------------------------------------------------------------
+Steven          403-600-6000    Thursday   11:00      12:00      Mens Cut
+Please press enter to continue....
 
 
 #SAMPLE RUN 8
