@@ -317,7 +317,6 @@ Sorry, the new time slot is already taken!
 Please press enter to continue....
 
 
-
 #SAMPLE RUN 13
 ===============================
 Hair Salon Appointment Manager!
@@ -337,7 +336,23 @@ Enter the current appointment start hour: 11
 No appointment found to change.
 Please press enter to continue....
 
-
+#SAMPLE RUN 14
+===============================
+Hair Salon Appointment Manager!
+===============================
+ 1 Schedule appoint.
+ 2 Find appoint. by name
+ 3 Print calendar for specific day
+ 4 Cancel appoint.
+ 5 Change appoint.
+ 6 Calculate total fees for a day
+ 7 Calculate total weekly fees
+ 9 Exit
+===============================
+>>> 6
+Enter the day to calculate charges for: Saturday
+Total Charges for Saturday: $140.00
+Please press enter to continue....
 
 #SAMPLE RUN 17
 ===============================
