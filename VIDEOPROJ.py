@@ -6,7 +6,7 @@ addedCost = [80, 40, 60]
 addedPhone = ['368-111-9999', '587-123-4567', '368-999-1111']
 addedType = [4, 3, 2]
 # Validate the input day
-valid_days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+valid_days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
  
  
  
@@ -118,7 +118,7 @@ def day_charges():
     if not addedDay:
         print("No appointments scheduled for any day.")
     else:
-        day = input("Enter the day to calculate charges for: ").capitalize()
+        day = input("Enter the day to calculate charges for: ")
        
         if day not in valid_days:
             if day == "Sunday":
@@ -179,16 +179,16 @@ while True:
  
     if userinput == 1:
         # Appoint. registration undergoes valid or invalid process based on inputs
-        day = input('What day: ').capitalize()
+        day = input('What day: ')
         while day not in valid_days:
-            day = input('What day: ').capitalize()
+            day = input('What day: ')
         time = int(input('Enter start hour (Between 9AM and 16PM): '))
         while time > 16 or time < 9:
             time = int(input('Invalid, not in time slot! Try again: '))
         if day in addedDay and time in addedTime:
             print(f'Sorry, time slot has been taken!')
         else:
-            name = input('Name: ').capitalize()
+            name = input('Name: ')
             phone = (input('Phone number: '))
             print('Appoint. types:')
             print('1: Mens haircut 2: Ladies haircut 3: Mens Coloring 4: Ladies Coloring')
@@ -197,17 +197,17 @@ while True:
     
     # Ask user for name to verify
     elif userinput == 2:
-        name = input('Enter Name: ').capitalize()
+        name = input('Enter Name: ')
         find_appoint_by_name(name)
  
     # Ask user for day to view on calendar
     elif userinput == 3:
-        day = input('Enter the day for which you want to see the schedule: ').capitalize()
+        day = input('Enter the day for which you want to see the schedule: ')
         display_calendar_for_day(day)
     
     # Cancel appoint. based on day and time, if registered, remove from appointments
     elif userinput == 4:
-        day = input('What day: ').capitalize()
+        day = input('What day: ')
         time = int(input('Start hour: '))
         if day in addedDay and time in addedTime:
             cancel_appoint(day, time)
