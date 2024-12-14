@@ -495,7 +495,7 @@ Client Name    Phone               Day     Start   Type
 gabriela       368-111-9999        thursday13      4       
 tyler          587-123-4567        saturday9       3       
 stephanie      368-999-1111        saturday10      2       
-steven         403-600-6000        thursday11      1       
+steven         403-600-6000        saturday12      1       
 ------------------------------------------------------------
 Total Daily Charges                        $220.00  
 -------------------------
