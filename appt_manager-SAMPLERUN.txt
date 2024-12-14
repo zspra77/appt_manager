@@ -470,6 +470,35 @@ Start hour: 11
 Time slot is not appointed!
 Please press enter to continue....
 
+SAMPLE RUN 20
+===============================
+Hair Salon Appointment Manager!
+===============================
+ 1 Schedule appoint.
+ 2 Find appoint. by name
+ 3 Print calendar for specific day
+ 4 Cancel appoint.
+ 5 Change appoint.
+ 6 Calculate total fees for a day
+ 7 Calculate total weekly fees
+ 9 Exit
+===============================
+>>> 9
+* * Exit System * *
+Would you like to save all appointments to a file (Y/N): Y
+Charges have been successfully saved to 'appointments1.csv'.
+
+APPOINTMENS1.CSV file
+----- Charges -----
+Client Name    Phone               Day     Start   Type    
+------------------------------------------------------------
+gabriela       368-111-9999        thursday13      4       
+tyler          587-123-4567        saturday9       3       
+stephanie      368-999-1111        saturday10      2       
+steven         403-600-6000        thursday11      1       
+------------------------------------------------------------
+Total Daily Charges                        $220.00  
+-------------------------
 
 
 #SAMPLE RUN 21
